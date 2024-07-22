@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router-dom"
+import Home from './components/Home/Home'
+import Login from "./components/Login/Login"
 
-export default function App() {
+
+function App() {
   return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="login" element={ <Login/> } />
+    
+      </Routes>
+    </div>
   )
 }
+
+export default App
