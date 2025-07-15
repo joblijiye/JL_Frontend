@@ -1,0 +1,43 @@
+.floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 300px; 
+    pointer-events: none;
+    top: 20%; /* Adjust the position to cover heading and search bar */
+  }
+  
+  .floating-icon {
+    position: absolute;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+   
+
+
+/* 
+
+  .floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .floating-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+   */
